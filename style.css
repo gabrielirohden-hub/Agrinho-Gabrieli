@@ -1,0 +1,274 @@
+//Segue código CSS.
+/* Reset básico de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4f7f5;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #1b4332;
+    color: rgb(255, 255, 255);
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+header .logo span {
+    color: #805e9d;
+}
+
+header nav a {
+    color: rgb(188, 84, 84);
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #52b788;
+}
+
+/* Seção Hero (Banner Principal) */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1470&#39;) no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    background-color: #52b788;
+    color: #1b4332;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 25px;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #40916c;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Seção Pilares */
+.pilares {
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pilares h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #1b4332;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: red(116, 53, 53);
+    border-bottom: 5px solid #2d6a4f;
+    border-radius: 8px;
+    padding: 30px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    color: #2d6a4f;
+    margin-bottom: 15px;
+}
+
+.saiba-mais {
+    display: block;
+    margin-top: 15px;
+    font-size: 12px;
+    color: #52b788;
+    font-weight: 600;
+}
+
+/* Painel de Informações Dinâmicas */
+.painel-info {
+    margin-top: 30px;
+    background-color: #e9f5ed;
+    padding: 20px;
+    border-left: 5px solid #52b788;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.6;
+    transition: all 0.3s ease;
+}
+
+.escondido {
+    display: none;
+}
+
+/* Seção Sobre */
+.sobre {
+    background-color: #2d6a4f;
+    color:yellow;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.sobre-texto {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.sobre h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.sobre p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #1b4332;
+    color: #b7e4c7;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* Responsividade simples para celulares */
+@media (max-width: 768px) {
+    header { flex-direction: column; gap: 15px; }
+    .hero h1 { font-size: 32px; }
+    .cards-container { flex-direction: column; align-items: center; }
+}
+
+Adicionar comentário
+Adicionar comentário
+
+Postada por EDIVALDO DA SILVA COSTA
+EDIVALDO DA SILVA COSTA
+Criado em: 3 de jun.3 de jun.
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agrinho: Agro Forte, Futuro Sustentável</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap&quot; rel="stylesheet">
+</head>
+<body>
+
+<header>
+<div class="logo">Projeto <span>Agrinho</span></div>
+<nav>
+<a href="#inicio">Início</a>
+<a href="#pilares">Pilares</a>
+<a href="#sobre">Equilíbrio</a>
+<a href="#contato">Participe</a>
+</nav>
+</header>
+
+<section id="inicio" class="hero">
+<div class="hero-content">
+<h1>Agro Forte, Futuro Sustentável</h1>
+<p>O equilíbrio perfeito entre a alta produção e a preservação do meio ambiente.</p>
+<a href="#pilares" class="btn">Descubra Como</a>
+</div>
+</section>
+
+<section id="pilares" class="pilares">
+<h2>Nossos Três Pilares</h2>
+<div class="cards-container">
+<div class="card" onclick="mostrarDetalhes('agro')">
+<h3>Agro Forte</h3>
+<p>Tecnologia e produtividade no campo para alimentar o mundo.</p>
+<span class="saiba-mais">Clique para saber mais +</span>
+</div>
+<div class="card" onclick="mostrarDetalhes('sustentavel')">
+<h3>Futuro Sustentável</h3>
+<p>Práticas agrícolas que preservam os recursos para as próximas gerações.</p>
+<span class="saiba-mais">Clique para saber mais +</span>
+</div>
+<div class="card" onclick="mostrarDetalhes('equilibrio')">
+<h3>Equilíbrio</h3>
+<p>A união da eficiência econômica com a responsabilidade ecológica.</p>
+<span class="saiba-mais">Clique para saber mais +</span>
+</div>
+</div>
+<div id="painel-info" class="painel-info escondido">
+<p id="texto-painel">Selecione um pilar acima para ver os detalhes.</p>
+</div>
+</section>
+
+<section id="sobre" class="sobre">
+<div class="sobre-texto">
+<h2>Produzir sem Destruir</h2>
+<p>O grande desafio do século XXI é garantir a segurança alimentar global reduzindo os impactos ambientais. Através da agricultura de precisão, do plantio direto, do reuso de água e do manejo integrado de pragas, o produtor rural se torna o maior guardião da natureza.</p>
+<p><strong>A força do campo está na sua capacidade de se reinventar de forma sustentável!</strong></p>
+</div>
+</section>
+
+<footer id="contato">
+<p>&copy; 2026 Projeto Agrinho - Desenvolvido com foco no futuro.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
